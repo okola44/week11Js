@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+ <meta name="description" content="Webpage description goes here" />
+ <meta charset="utf-8">
+ <title>Change_me</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="author" content="">
+ <link rel="stylesheet" href="css/style.css">
+ <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+
+<body>
+ 
+<div class="container">
+   
+<p>what class are you in?</p>
+<input type="" id="class" placeholder="class">
+<p>which is your favorite subject?</p>
+<input type="" id="subject" placeholder="subject">
+<p>when did you join codehive 2021</p>
+<input type="" id="today" placeholder="d/m/y">
+
+<button type="button" id="result" onclick="myInfo()">your results</button>
+ 
+</div>
+
+
+<script>
+    
+function myInfo(){
+    var x=document.getElementById("result");
+    var classes=document.getElementById("class").value;
+    var subject=document.getElementById("subject").value;
+    var date=document.getElementById("today").value;
+    alert (`class:${classes}
+            subject:${subject}
+            date:${date} `);
+    
+}
+</script>
+
+
+</body>
+</html>
